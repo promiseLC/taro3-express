@@ -4,7 +4,8 @@ import './app.scss';
 
 function App({ children }: PropsWithChildren) {
   useLaunch(() => {
-    console.log('App launched.');
+    // eslint-disable-next-line no-console
+    console.log('App launched.1');
   });
 
   // children 是将要会渲染的页面
