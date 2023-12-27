@@ -1,0 +1,16 @@
+{
+  "extends": [
+    "taro/react"
+  ],
+  "env": {
+    "browser": true,
+    "node": true,
+    "es6": true
+  },
+  "rules": {
+    "react/jsx-uses-react": "off",
+    "react/react-in-jsx-scope": "off",
+    "semi": "error",
+    "no-console": "warn"
+  }
+}
