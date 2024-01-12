@@ -11,6 +11,9 @@
     "react/jsx-uses-react": "off",
     "react/react-in-jsx-scope": "off",
     "semi": "error",
-    "no-console": "warn"
+    "no-console": "warn",
+    "jsx-quotes": 0,
+    "react/jsx-closing-bracket-location": "off",
+    "--no-ignore": "off"
   }
 }

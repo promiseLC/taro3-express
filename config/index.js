@@ -1,3 +1,5 @@
+import path from 'path';
+
 const config = {
   projectName: 'taro-express',
   date: '2023-12-26',
@@ -19,6 +21,13 @@ const config = {
     }
   },
   framework: 'react',
+   sass: {
+    data: `$primaryColor: #0066e6;`
+  },
+  alias: {
+    '@': path.resolve(__dirname, '..', 'src'),
+    '@/common': path.resolve(__dirname, '..', 'src/common'),
+  },
   compiler: 'webpack5',
   cache: {
     enable: false // Webpack 持久化缓存配置，建议开启。默认配置请参考：https://docs.taro.zone/docs/config-detail#cache

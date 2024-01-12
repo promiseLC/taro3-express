@@ -1,0 +1,131 @@
+@import '../../assects/iconfont/iconfont.css';
+
+.flight-container {
+  .flight-top {
+    background: #fff;
+    position: relative;
+    z-index: 10;
+    margin: 0 20px;
+    border-radius: 20px;
+    padding: 30px 40px 40px;
+    box-shadow: 0 10px 20px -4px rgba(0, 0, 0, 0.1);
+    border-left: 1px solid #efefef;
+    border-right: 1px solid #efefef;
+    margin-top: 168px;
+
+    .item {
+      font-size: 44px;
+      position: relative;
+      font-weight: 600;
+      height: 112px;
+      line-height: 112px;
+      border-bottom: 1px solid #eee;
+      display: flex;
+
+      &.date {
+        border-bottom: none !important;
+      }
+    }
+
+    .station .form,
+    .station .to {
+      width: 45%;
+      opacity: 1;
+      transition: all 0.5s ease-out;
+    }
+  }
+
+  .station .from,
+  .station .to {
+    transition: all 0.4s ease-out;
+    width: 50%;
+    white-space: nowrap;
+    overflow: hidden;
+    text-overflow: ellipsis;
+  }
+
+  .station .from {
+    padding-right: 5%;
+    padding-left: 0;
+  }
+  .station .to {
+    padding-left: 5%;
+    padding-right: 0;
+    text-align: right;
+  }
+
+  .station .from.exchange {
+    transform: translate3d(100%, 0, 0);
+    text-align: right;
+  }
+  .station .to.exchange {
+    transform: translate3d(-100%, 0, 0);
+    text-align: left;
+  }
+  .station .from.slide {
+    transform: translate3d(40%, 0, 0);
+    text-align: right;
+    opacity: 0;
+  }
+  .station .to.slide {
+    transform: translate3d(-40%, 0, 0);
+    text-align: left;
+    opacity: 0;
+  }
+
+  .icon-zhihuan {
+    flex: 1;
+    text-align: center;
+    font-size: 40px;
+    line-height: 110px;
+    font-weight: bolder;
+  }
+
+  .icon-zhihuan {
+    &.active {
+      animation: rotate 0.5s ease;
+    }
+  }
+  @keyframes rotate {
+    0% {
+      transform: rotate(0deg);
+    }
+    100% {
+      transform: rotate(360deg);
+    }
+  }
+
+  .search-btn {
+    background: $primaryColor;
+    height: 88px;
+    line-height: 88px;
+    color: #fff;
+    font-size: 40px;
+    font-weight: 600;
+    border-radius: 88px;
+    margin-top: 10px;
+  }
+
+  .flight-index-tab {
+    .tab-content {
+      height: 350px !important;
+    }
+  }
+
+  .flight-container-swiper {
+    margin: 20px 20px 0 20px;
+
+    .item {
+      width: 100%;
+      margin: 0 auto;
+      height: 120px;
+    }
+
+    .img {
+      margin: 0 auto;
+      width: 100%;
+      height: 120px;
+      border-radius: 20px;
+    }
+  }
+}
